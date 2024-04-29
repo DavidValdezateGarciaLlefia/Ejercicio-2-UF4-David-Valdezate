@@ -213,12 +213,7 @@ function obtenerPokemonsThenCatch() {
                 const final = new Date().getTime(); 
                 const tiempoTotal = final - inicio;
                 console.log('Tiempo total transcurrido:', tiempoTotal, 'ms');
-               
-                const tiempoElemento = document.querySelector('#timerThenCatch');
-                document.querySelector('#timerPromise').innerHTML = tiempoTotal
-                            document.querySelector('#timerPromise').innerHTML = tiempoTotal
-
-                tiempoElemento.textContent = `${tiempoTotal}`;
+                document.querySelector('#timerThenCatch').innerHTML = tiempoTotal
             });
         })
         .catch(error => {
